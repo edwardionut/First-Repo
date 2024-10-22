@@ -1,0 +1,6 @@
+$_GET - Array
+$_POST - Array
+$_COOKIE -Array
+
+$_REQUEST - Array
+$_SERVER - Array
