@@ -1,5 +1,7 @@
 <?php
 
+namespace Garage;
+
 require_once 'Vehicul.php';
 class Motocicleta extends Vehicul
 {

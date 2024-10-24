@@ -1,12 +1,13 @@
 <?php
 
+namespace Garage;
 abstract class Vehicul
 {
-    protected $marca;
-    protected $model;
-    protected $numarRoti;
-    protected $tipMotor;
-    protected $numarLocuri;
+    protected string $marca;
+    protected string $model;
+    protected int $numarRoti;
+    protected string $tipMotor;
+    protected int $numarLocuri;
 
     abstract public function claxoneza();
     abstract public function semnalizeaza();
