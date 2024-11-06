@@ -1,0 +1,20 @@
+{
+    "name": "g9/curs12",
+    "description": "description",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^6.4",
+        "symfony/console": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "G9\\Curs12\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "edwardionut",
+            "email": "eca.ionutedward@gmail.com"
+        }
+    ]
+}
