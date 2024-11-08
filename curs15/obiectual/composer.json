@@ -1,0 +1,17 @@
+{
+    "name": "maria/obiectual",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Obiectual\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marian"
+        }
+    ]
+}

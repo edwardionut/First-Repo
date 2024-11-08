@@ -2,7 +2,7 @@
 
 interface Magazin
 {
-    public function impachetare($culoare);
+    public function impachetare(string $culoare);
     public function afisareStoc();
     public function afisareProgram();
 }

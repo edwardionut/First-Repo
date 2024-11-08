@@ -2,14 +2,14 @@
 
 trait Suveniruri
 {
-    public $stocSuveniruri =
+    public array $stocSuveniruri =
         [
             'magnet' => 50,
             'cana' => 40,
             'breloc' => 30
         ];
 
-    public $ambalaje =
+    public array $ambalaje =
         [
             'galben' => 25,
             'rosu' => 15,
