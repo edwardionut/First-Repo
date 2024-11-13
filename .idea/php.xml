@@ -23,6 +23,10 @@
       <path value="$PROJECT_DIR$/curs12/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/curs12/vendor/psr/container" />
       <path value="$PROJECT_DIR$/curs12/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/curs15/obiectual/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/curs15/obiectual/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/curs15/obiectual/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/curs15/obiectual/vendor/composer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">

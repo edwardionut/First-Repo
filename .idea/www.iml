@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/curs12/src" isTestSource="false" packagePrefix="G9\Curs12\" />
+      <sourceFolder url="file://$MODULE_DIR$/curs15/obiectual/src" isTestSource="false" packagePrefix="Obiectual\" />
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/symfony/console" />
@@ -14,6 +15,10 @@
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/symfony/string" />
       <excludeFolder url="file://$MODULE_DIR$/curs12/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/curs15/obiectual/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/curs15/obiectual/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/curs15/obiectual/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/curs15/obiectual/vendor/symfony/var-dumper" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

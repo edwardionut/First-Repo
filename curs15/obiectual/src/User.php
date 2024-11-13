@@ -4,6 +4,7 @@ namespace Obiectual;
 
 class User
 {
+    private int $id;
     private string $username;
     private string $password;
     private string $fullName;
@@ -28,5 +29,30 @@ class User
     public function getFullName(): string
     {
         return $this->fullName;
+    }
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    public function setUsername(string $username): void
+    {
+        $this->username = $username;
+    }
+
+    public function setPassword(string $password): void
+    {
+        $this->password = $password;
+    }
+
+    public function setFullName(string $fullName): void
+    {
+        $this->fullName = $fullName;
     }
 }
