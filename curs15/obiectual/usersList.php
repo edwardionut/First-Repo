@@ -4,9 +4,15 @@ use Obiectual\UserRepository;
 
 require_once 'vendor/autoload.php';
 
-$userRepo = new UserRepository();
-$users = $userRepo->getUsers();
+$repo = new UserRepository();
+$search = '';
 
+if(isset($_GET['search'])) {
+    $search = $_GET['search'];
+    $users = $repo->searchByFullName($_GET['search']);
+} else {
+    $users = $repo->getUsers();
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +31,11 @@ $users = $userRepo->getUsers();
 <body>
 
 <h1>Lista Utilizatorilor</h1>
-
+<form action="usersList.php" method="get">
+    Search by Full Name: <br>
+    <input type="text" value="<?=$search?>" name="search">
+    <input type="submit" value="search">
+</form>
 <table>
     <tr>
         <th>ID</th>

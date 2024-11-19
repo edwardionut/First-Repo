@@ -34,6 +34,22 @@ class UserRepository extends Repository
         $statement = $this->pdo->prepare($sql);
         $statement->execute();
         $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $this->transform($users);
+    }
+
+    public function searchByFullName(string $search): array
+    {
+        $sql = "SELECT * FROM users WHERE full_name LIKE :full_name";
+        $statement = $this->pdo->prepare($sql);
+        $search = "%$search%";
+        $statement->bindParam(':full_name', $search, \PDO::PARAM_STR);
+        $statement->execute();
+        $users = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $this->transform($users);
+    }
+
+    private function transform(array $users): array
+    {
         $usersArray = [];
         foreach ($users as $user) {
             $userObject = new User(
