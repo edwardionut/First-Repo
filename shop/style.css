@@ -1,0 +1,135 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffffff;
+}
+
+table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Helvetica;
+    background-color: #7cb6f6;
+    width: auto;
+    border-collapse: separate;
+    overflow: hidden;
+}
+
+th {
+    background-color: #ffdf00;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    border: 1px solid black;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+tr:hover:not(.header) {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.button.increment-button,
+.button.decrement-button {
+    background-color: #99c3f1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.button.increment-button:hover {
+    background-color: #4caf50;
+    transition: background-color 0.2s ease;
+}
+
+.button.decrement-button:hover {
+    background-color: #f44336;
+    transition: background-color 0.2s ease;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    background-color: #7cb6f6;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
+}
+
+.button:hover {
+    background-color: #e0f7fa;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.empty-cart-button:hover {
+    background-color: #ff0000;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+
+.message {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Helvetica, sans-serif;
+    background-color: #ffdf00;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+}
